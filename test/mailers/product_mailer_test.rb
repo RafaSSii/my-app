@@ -3,7 +3,7 @@ require "test_helper"
 class ProductMailerTest < ActionMailer::TestCase
   test "in_stock" do
     product = Product.create!(name: "Fulano", inventory_count: 10)
-    subscriber = Subscriber.create!(mail: "to@example.org")
+    subscriber = Subscriber.create!(email: "to@example.org")
 
     mail = ProductMailer.with(product: product, subscriber: subscriber).in_stock
 
