@@ -1,3 +1,4 @@
+require "ostruct"
 require "test_helper"
 
 class ProductMailerTest < ActionMailer::TestCase
